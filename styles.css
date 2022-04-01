@@ -11,18 +11,25 @@ body{
 
 .calculator{
     margin: auto;
-    margin-top: 15vh;
+    margin-top: 35vh;
     height: 325px;
     width: 235px;
-
-    border: 0.1px solid black;
     border-radius: 10px;
-    box-shadow: inset 0px 0px 2px white;
+    /*
+    border: 0.1px solid black;
+    */
     box-shadow: 0px 10px 25px rgb(80, 80, 80);
     background: var(--bg-color);
 }
 
-.outputDiv{
+.border{
+    z-index: 1;
+    border-radius: 10px;
+    border: 0.1px solid black;
+    box-shadow: inset 0px 0px 2px white;
+}
+
+.output{
     height: 82px;
     width: 100%;
 
@@ -31,7 +38,7 @@ body{
     align-content: flex-end;
 }
 
-#output{
+.previous-operand, .current-operand{
     color: white;
     font-size: 3.5rem;
     padding-top: 5%;
@@ -50,9 +57,7 @@ body{
     border: none;
     padding: 0;
     margin: 0;
-
     height: 47px;
-
     color: white;
     font-size: 1.4rem;
 }
